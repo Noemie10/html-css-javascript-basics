@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>🛼 Quad Skates</title>
+    <style>
+      body {
+      
+      background-image: url('https://s3.amazonaws.com/shecodesio-production/uploads/files/000/086/253/original/SheCodes_images.jpg?1687110575');
+      min-height: 100%;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-position:top;
+      background-size: cover;
+    }
+       
+
+
+h1 {
+  text-align: center;
+  font-size: 45px;
+  font-family:'Courier New', Courier, monospace;
+  margin: 12px auto;
+}
+
+h2 {
+  display: block;
+  text-align: center;
+  color: white;
+  font-weight:lighter;
+  font-size: 23px;
+  margin: 0px 0px 20px 0px;
+}
+
+
+img {
+  display: block;
+  width: 300px;
+  max-width: 100%;
+  margin: 0 auto;
+  border-radius: 70px;
+  box-shadow: 5px 5px 10px white;
+}
+
+p {
+font-weight:lighter;
+font-size: 19px;
+color: black;
+margin: 28px 0px 10px 0px;
+
+}
+
+button {
+  display:block;
+  border-color:rgba(223, 159, 247, 0.8);
+  border-radius: 70px;
+  margin: 0 auto;
+  padding: 22px 20px;
+  background: radial-gradient(290px at 8.6% 46.4%, rgb(255, 148, 148) 7.8%, rgb(255, 223, 155) 32.2%, rgb(255, 247, 177) 48.1%, rgb(216, 255, 177) 61%, rgb(177, 255, 253) 75.3%);
+  font-size: 18px;
+  font-weight:bold;
+  font-family:'Courier New', Courier, monospace;
+  color:black;
+  transition: transform 1s;
+}
+
+button:hover {
+cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='33' height='40' viewport='0 0 100 100' style='fill:black;font-size:20px;'><text y='50%'>🛼</text></svg>") 
+16 0,
+auto;
+background: linear-gradient(110.5deg, rgba(248, 196, 249, 0.66) 22.8%, rgba(253, 122, 4, 0.15) 64.6%);
+color: white;
+font-weight:bold;
+transform: rotate(360deg);
+ 
+
+}
+
+
+hr {
+border: white solid 0.5px;
+
+
+}
+
+span {
+  font-size: 21px;
+}
+
+.container {
+  
+  margin: 0 auto;
+  text-align:center;
+  font-family: 'Courier New', Courier, monospace;
+  max-width: 600px;
+}
+
+.link {
+  display: block;
+  text-decoration: none;
+  font-weight: lighter;
+  text-align:center;
+  font-size: 16px;
+  font-weight:bold;
+  color: white;
+  width: 110px;
+  margin: 5px auto;
+}
+
+.link:hover {
+text-decoration: underline;
+}
+
+.signature {
+  color:white;
+  font-size: 18px;
+  margin: 5px auto;
+}
+
+
+    </style>
+  </head>
+
+  <body>
+    
+    <div class="container">
+  
+    <h1> <strong>I Love Quad Skates</strong></h1>
+    <h2><em> f r e e d o m </em></h2>
+ 
+
+    <img
+      src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/084/548/original/girl_skate.png?1685980010"
+      alt="skate girl"
+    />
+
+    <p>
+      Beside making you spend time outside, skating forces you to face your
+      fears and to trust yourself... in style!
+    </p>
+    </br>
+    <button> BE A SK8TER GIRL </button>
+      </br>
+      <a class="link"
+    href="https://unsplash.com/es/s/fotos/roller-skates"
+    target="_blank"
+    class="link">
+      📸 photoshoot
+    </a>
+    <hr>
+    <p class="signature"> <span>⌨️</span> Coded by Noémie Maps</p>
+
+     </div>
+
+<script>
+  function register() {
+
+    let name = prompt("What is your name?");
+
+    if(name === null){
+      return;
+    }
+
+    let email = prompt("What is your email?");
+
+    if(email === null){
+      return;
+    }
+
+    let skater = prompt("Are you a skater?");
+
+    if(skater === null){
+      return;
+    }
+    
+    if (name === "" && email === "" && skater === ""){      
+      alert("Write something to become a sk8ter girl 🛼");
+      return;
+    }
+
+    if (skater === "yes") {
+      alert("Great " + name + "! Join our Friday skates' night and meet cool people ✌️ We'll drop you an email at " + email);
+    } else {
+      alert("No problem " + name + "! Join our classes every Monday in June ☀️ We'll drop you an email at " + email);
+    }
+    
+   
+
+  }
+
+    
+
+  /* name
+     email
+     are you a skater? 
+      yes, "Great + name Join our Friday London skates' night and meet cool people. We'll drop you an email at + email."
+      no, "No problem, + name.  Join our classes every Monday in June emoji soleil. We'll drop you an email at + email."
+  */
+
+
+let button = document.querySelector("button")
+button.addEventListener("click",register)
+
+</script>
+
+  </body>
+</html>

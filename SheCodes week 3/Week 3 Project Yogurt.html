@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Greek Yogurt 🥛</title>
+    <style>
+      body {
+        background: linear-gradient(
+          110.5deg,
+          rgba(248, 196, 249, 0.66) 22.8%,
+          rgba(253, 122, 4, 0.15) 64.6%
+        );
+      }
+
+      h1 {
+        font-size: 50px;
+        text-align: center;
+        color: #9896f1;
+      }
+
+      h2 {
+        font-size: 27px;
+        text-align: center;
+        color: #f95959;
+        border: 1px solid #9896f1;
+        border-radius: 25px;
+        padding: 20px 30px;
+      }
+
+      img {
+        display: block;
+        margin: 0 auto;
+        width: 320px;
+        max-width: 100%;
+        border-radius: 40px;
+        box-shadow: 1px 1px 20px #9896f1;
+      }
+
+      p {
+        line-height: 1.5;
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 20px 0 10px;
+      }
+
+      button {
+        display: block;
+        margin: 20px auto;
+        border: none;
+        border-radius: 100px;
+        padding: 20px;
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        background: #9896f1;
+        color: white;
+        box-shadow: 5px 5px 4px rgba(248, 196, 249, 0.66);
+        transition: ease-in-out;
+      }
+
+      button:hover {
+        color: white;
+        background: #f95959;
+        opacity: O.9;
+        cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='31' height='37' viewport='0 0 100 100' style='fill:black;font-size:19px;'><text y='50%'>🤍</text></svg>")
+            16 0,
+          auto; /*!emojicursor.app*/
+      }
+
+      .container {
+        margin: 0 auto;
+        max-width: 600px;
+        padding: 30px 60px;
+      }
+
+      .learn-more {
+        display: block;
+        text-decoration: none;
+
+        color: #9896f1;
+        font-size: 18px;
+      }
+
+      .learn-more:hover {
+        text-decoration: underline;
+      }
+
+      .footer {
+        text-align: center;
+        font-family: "Courier New", Courier, monospace;
+        font-size: 18px;
+        font-weight: 550;
+        color: #455d7a;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>I love yogurt</h1>
+      <h2>Especially Greek yogurt!</h2>
+      <img
+        src="https://thegreekfoodie.com/wp-content/uploads/2021/08/How_to_make_greek_yogurt_01.webp"
+        alt="Greek Yogurt"
+      />
+      <p>
+        Greek yogurt is an excellent source of calcium, which can help improve
+        bone health. It also contains probiotics, which support a healthy
+        bacterial balance in the gut.
+      </p>
+
+      <br />
+      <a
+        href="https://www.liveeatlearn.com/greek-yogurt/"
+        target="_blank"
+        class="learn-more"
+      >
+        Learn More
+      </a>
+
+      <button>Buy Greek Yogurt</button>
+
+      <p class="footer">This page was built by Noémie Maps</p>
+    </div>
+    <script>
+      function customerData() {
+        let name = prompt("What is your name?");
+        let email = prompt("What is your email address?");
+        let emoji = prompt("Your favorite emoji is...?");
+
+        if (email === "" && name === "" && emoji === "") {
+          alert("You need to write something.");
+        } else {
+          alert(
+            "Thank you " +
+              name +
+              "! We'll be in touch by email. In the meantime, eat a lot of Yogurt! " +
+              emoji
+          );
+        }
+      }
+
+      let buyButton = document.querySelector("button");
+      buyButton.addEventListener("click", customerData);
+    </script>
+  </body>
+</html>
